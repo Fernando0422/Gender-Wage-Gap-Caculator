@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Gender Wage Gap Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<a><strong>Welcome to the Gender Race 
+  Wage Gap Calculator!</strong></a> <br>
+
+
+
+<section class="calculator" id="body">
+<form action="" class="wage-gap" id="wage-gap" onsubmit="return false;">
+  <h6> click "enter" to calculate</h6>
+  <p>If a White man makes<p>
+  $
+  <span class="salary-initial">
+	<input type="number" min="0" step="100" id="salary-initial" name="salary-initial" onchange="calculateTotal()"/><label class="input__label">	<span class="input__label-content"></span></label></span>, <br><br>
+ 
+  <span class="input">
+  <select class="input" id="womanethnicity" name="womanethnicity" onchange="calculateTotal()">
+    <option value="latina">A Hispanic or Latin Women</option>
+    <option value="native">A Native American Women</option>
+    <option value="africa">An African American Women</option>
+    <option value="nhpi">A Native Hawaiian/Pacific Islander Women</option>
+    <option value="asian">An Asian Women</option>
+    </select>
+    would only make <br>
+    
+    <a> <span id="salary-calculated"></a></span>
+</form>
+</section>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
